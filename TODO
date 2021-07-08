@@ -1,0 +1,133 @@
+
+Todo: 
+  App Bar (Navigation Bar)
+  Syarat:
+    ✔ Menampilkan nama aplikasi atau brand logo dari aplikasi katalog restoran (tentukan sendiri nama aplikasi atau brand logonya). @done(21-05-09 14:30)
+      ✔ Logo brand @done(21-06-19 10:10)
+    Terdapat navigation menu:
+      ✔ Home -> mengarah ke root domain. @done(21-05-09 14:31)
+      ✔  Favorite -> target URL cukup bernilai “#” (Sebagai placeholder untuk digunakan pada submission selanjutnya). @done(21-05-09 14:31)
+      ✔ About Us -> arahkan ke profil LinkedIn/Github/Social Media Anda, atau boleh juga ke personal web/blog. @done(21-05-09 14:31)
+    ✔ Terdapat fitur navigation drawer yang berfungsi dengan baik bila diakses pada layar seluler. @done(21-05-09 14:31)
+  
+  Hero Element (Jumbotron Element)
+  Syarat:
+    ✔ Menampilkan hero element (berukuran full width) dengan gambar yang sudah ditentukan, silakan pilih salah satu aset yang disediakan di dalam starter proyek, src -> public -> images -> hero. Gambar yang tidak digunakan, bisa Anda hapus. @done(21-05-09 14:54)
+    ✔ Terdapat teks yang ditampilkan pada hero elemen. Konten teks bebas, namun akan lebih baik jika relevan dengan konten yang ditampilkan. @done(21-05-09 14:54)
+  
+  Daftar Restoran
+  Syarat:
+    ✔ Menampilkan daftar restoran berdasarkan data yang sudah disediakan di dalam project starter (src -> DATA.json), untuk menampilkannya boleh melalui cara hardcoded di berkas HTML, atau menggunakan DOM manipulation menggunakan JavaScript. @done(21-05-10 20:50)
+    ✔ Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran. @done(21-05-10 20:50)
+  
+  Footer
+  Syarat:
+    ✔ Terdapat footer yang ditampilkan di bawah halaman. @done(21-05-09 14:58)
+    ✔ Terdapat konten copyright mencangkup tahun dan nama aplikasi. Contoh: “Copyright © 2020 - Hunger Apps”. @done(21-05-09 15:03)
+  
+  Responsibilitas Tampilan
+  Syarat:
+    ✔ Tampilan web app harus responsif pada seluruh ukuran layar (mobile - tablet - desktop). Utamakan tampilan mobile terlebih dahulu. @done(21-05-09 17:11)
+    ✔ Gunakan teknik Grid CSS atau Flexbox dalam menyusun layout. Bila terdapat float, submission akan ditolak. @done(21-05-09 17:11)
+    ✔  Menetapkan ukuran viewport secara dinamis berdasarkan layar device yang digunakan. @done(21-05-09 17:11)
+  
+  Aksesibilitas Website
+  Syarat:
+    ✔ Seluruh fungsionalitas website dapat dilakukan dengan menggunakan keyboard. Contohnya mengakses tombol hamburger button, mengakses tautan yang ada. @done(21-05-10 21:15)
+    ✔  Menerapkan teknik skip to content untuk melewati focus pada menu navigasi. @done(21-05-10 21:03)
+    ✔ Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila hanya gambar tidak memiliki arti apapun, cukup berikan atribut alt dengan nilai kosong. @done(21-05-10 21:03)
+    ✔  Ukuran elemen button/tautan harus memiliki ukuran minimal 44x44px. @done(21-05-12 11:14)
+    ✔ Menggunakan semantic element dalam menyusun struktur dan landmarking HTML. @done(21-05-10 21:08)
+  
+  SARAN
+  Saran Submission:
+    Menerapkan tampilan aplikasi yang menarik:
+      ✔ Memiliki pemilihan warna yang pas dengan tema aplikasi (Dalam memilih warna, Anda dapat memanfaatkan tools pemilihan warna seperti colorhunt.co). @done(21-05-10 21:15)
+      ✔ Tata letak elemen yang pas. @done(21-05-10 21:15)
+        Contoh: Tidak ada konten yang bertumpuk.
+      ✔ Penggunaan font yang pas dengan tema. @done(21-05-10 21:15)
+      ✔ Penerapan padding, margin yang pas. @done(21-05-10 21:15)
+    ✘ Terdapat konten tambahan yang relevan dengan tema aplikasi, di luar dari data yang disediakan. @cancelled(21-06-19 10:10)
+    ✔ Menggunakan elemen secara bijak sesuai dengan fungsinya. Contoh: Tidak menggunakan button sebagai anchor, ataupun sebaliknya. @done(21-05-10 21:15)
+    ✘ Dalam penyusunan CSS, Anda boleh menggunakan SASS bila Anda nyaman menggunakannya. @cancelled(21-06-19 10:10)
+    
+  Halaman Utama (Daftar Restoran)
+  Syarat:
+    ✔ Menampilkan daftar restoran yang datanya bersumber dari API https://restaurant-api.dicoding.dev/. Silakan lihat dokumentasinya pada halaman tersebut. @done(21-06-18 23:19)
+    ✔ Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran. @done(21-06-18 23:19)
+    ✔ Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya. @done(21-06-18 23:19)
+    ✔ Hero elemen tetap dipertahankan. @done(21-06-18 23:19)
+  
+  Halaman Detail Restoran
+  Syarat:
+    ✔ Menampilkan detail dari restoran yang dipilih dari halaman utama (daftar restoran) atau halaman favorit restoran. @done(21-06-18 23:19)
+    Pada halaman detail restoran harus terdapat:
+      ✔ Gambar @done(21-06-18 23:19)
+      ✔ Alamat Lengkap @done(21-06-18 23:19)
+      ✔ Kategori Menu @done(21-06-18 23:19)
+      ✔ Menu Makanan @done(21-06-18 23:19)
+      ✔ Menu Minuman @done(21-06-18 23:19)
+      ✔ Rating @done(21-06-18 23:19)
+      ✔ Customer Reviews @done(21-06-19 10:10)
+    ✔ Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB). @done(21-06-18 23:20)
+
+  Halaman Daftar Restoran Favorit
+  Syarat:
+    ✔ Halaman Daftar Restoran dapat diakses melalui menu navigasi favorit. @done(21-06-18 23:20)
+    ✔ Menampilkan restoran yang difavoritkan oleh pengguna (data diambil dari indexedDB). @done(21-06-18 23:20)
+    ✔ Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran. @done(21-06-18 23:20)
+    ✔ Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya. @done(21-06-18 23:20)
+  
+  Native Capability
+  Syarat:
+    ✔ Aplikasi dapat diakses dalam keadaan offline tanpa ada aset yang gagal dimuat, termasuk data yang didapatkan dari API. Anda bebas menggunakan strategi caching apapun, bahkan menggunakan workbox. @done(21-06-18 23:20)
+    ✔ Aplikasi harus menampilkan icon Add to Home Screen. @done(21-06-18 23:20)
+    ✔ Aplikasi memiliki custom icon yang ditampilkan pada home screen dan splash screen. @done(21-06-18 23:20)
+
+  Code Quality
+  Syarat:
+    ✔ Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript. Harap lampirkan berkas konfigurasi ESLint ya. @done(21-06-18 23:20)
+    ✔ Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style. @done(21-06-18 23:20)
+
+  ✔ Pertahankan syarat yang ada pada submission sebelumnya. Seperti responsibilitas tampilan, dan aksesibilitas pada website. @done(21-06-18 23:20)
+
+  Saran Submission:
+    ✔ Tambahkan fitur untuk memberikan consumer review baru pada halaman detail. Silakan simak caranya pada dokumentasi API (Gunakan testing key untuk api key-nya). @done(21-06-19 11:30)
+    ✔ Buat arsitektur yang baik, sehingga dapat meminimalisir pengulangan penulisan kode. @done(21-06-18 23:22)
+    ✔ Alangkah baiknya bila Anda menerapkan Web Component secara native menggunakan Custom Element. @done(21-06-18 23:22)
+    ✘ Tambahkan indikator loading ketika data sedang dimuat dari server. @cancelled(21-07-08 09:56)
+    ✘ Menampilkan keterangan/halaman bila request yang dilakukan gagal. @cancelled(21-07-08 09:56)
+  
+  Integration Test
+  Syarat:
+    ✔ Menerapkan integration test untuk fungsi menyukai dan batal menyukai restoran. @done(21-07-08 09:57)
+  
+  End to End Test
+  Syarat:
+    Menerapkan End to End Test dengan skenario:
+      ✔ Menyukai salah satu restoran. @done(21-07-08 09:58)
+      ✔ Batal menyukai restoran tersebut. @done(21-07-08 09:58)
+
+  Image Optimization
+  Syarat:
+    ✔ Melakukan kompresi terhadap gambar hero yang digunakan. Ukuran gambar harus di bawah 200kb. @done(21-07-08 11:31)
+    ✔ Menerapkan teknik image responsive pada gambar hero. Gambar pada layar seluler dan desktop harus berbeda. @done(21-07-08 13:01)
+    ✔ Menerapkan teknik lazy loading pada gambar daftar restoran yang ditampilkan. @done(21-07-08 13:12)
+
+  Bundle Optimization
+  Syarat:
+    ✔ Memasang bundle analyzer pada proyek submission. @done(21-07-08 13:27)
+    ✔ Gunakan teknik Code Splitting untuk memisahkan vendor code dari kode asli yang Anda tuliskan. @done(21-07-08 13:27)
+  
+  Saran Submission:
+    ✔ Menuliskan test case secara lengkap, mulai dari kasus positif hingga kasus negatif. Pastikan test case yang dijalankan berhasil. @done(21-07-08 13:40)
+    ✔ Menerapkan End to End test pada skenario lain di luar yang sudah ditentukan. Pastikan test case yang dijalankan berhasil. @done(21-07-08 13:40)
+      Contoh: bila aplikasi terdapat fitur customer review, lakukan End to End test pada fitur tersebut.
+    ☐ Menerapkan optimasi lain di luar dari optimasi yang menjadi persyaratan. Contoh, Anda bisa menerapkan pendekatan skeleton UI, minify/uglify CSS.
+    ☐ Mendeploy hasil web app yang Anda kerjakan ke third-party hosting. Seperti Firebase Hosting, Netlify, Heroku, Github Pages, atau yang lainnya. 
+    Serta, memperhatikan matrik Web Vitals dengan nilai:
+      ✔ FCP < 2.5 detik @done(21-07-08 13:57)
+      ✔ FID/TBT < 100 ms @done(21-07-08 13:57)
+      ☐ CLS < 0.1
+
+  Note: Lampirkan URL dari laman web yang sudah di hosting pada Student Notes.
