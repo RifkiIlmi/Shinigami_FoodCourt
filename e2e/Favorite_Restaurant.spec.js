@@ -92,16 +92,16 @@ Scenario('Customer review', async ({ I }) => {
 
   I.seeElement(formReview);
 
-  const myReview = 'Hooray';
-  I.fillField(inputName, 'EagleSlow');
+  const myReview = 'Asgard is under Attack';
+  I.fillField(inputName, 'Thor son of Odin');
   I.fillField(inputReview, myReview);
   // pause();
 
   I.click(reviewSubmitBtn);
 
-  I.wait(5);
-
+  I.wait(3);
   I.refreshPage();
+  I.wait(3);
   I.refreshPage();
 
   I.seeElement(latestReview);
