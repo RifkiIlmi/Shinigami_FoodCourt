@@ -15,7 +15,7 @@ const createRestaurantItemTemplate = (resto, ENDPOINT) => `
       <div class="post-item__city">
           <p>${resto.city}</p>
       </div>
-      <img class="lazyload post-item__thumbnail"
+      <img class="lazyload post-item__thumbnail" width="100%" height="300px"
           data-src="${ENDPOINT.IMAGES.SMALL(resto.pictureId)}"
           alt="Restoran ${resto.name}">
       <div class="post-item__content">
@@ -35,7 +35,7 @@ const createRestaurantItemTemplate = (resto, ENDPOINT) => `
                       <i class="fas fa-star"></i>
                   </div>
               </div>
-              <span id="number_rating" class="number_rating">${resto.rating}</span>
+              <span id="post-item__rating" class="number_rating">${resto.rating}</span>
           </div>
           <h1 class="post-item__title"><a href="#/detail/${resto.id}">${resto.name}</a></h1>
           <p class="post-item__description">${resto.description}</p>

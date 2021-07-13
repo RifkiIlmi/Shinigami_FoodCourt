@@ -1,6 +1,6 @@
 import RestaurantSource from '../../data/restaurant-source';
 import ENDPPOINT from '../../global/api-endpoint';
-import { createRestaurantItemTemplate } from '../templates/template-creator';
+import { createSkeletonRestaurantTemplate, createRestaurantItemTemplate } from '../templates/template-creator';
 
 const Home = {
   async render() {
@@ -8,7 +8,9 @@ const Home = {
         <section class="content">
             <div id="maincontent" class="latest">
                 <h1 class="latest__label">Our Partner Restaurant:</h1>
-                <div id="posts" class="posts"></div>
+                <div id="posts" class="posts">
+                  ${createSkeletonRestaurantTemplate(20)}
+                </div>
             </div>
         </section>
       `;

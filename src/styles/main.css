@@ -2,7 +2,6 @@
  * Global
  * Styles
  */
- @import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
 
 * {
     padding: 0;
@@ -324,7 +323,7 @@ main {
     font-size: 18px;
     margin-top: 16px;
     transition: 0.3s opacity;
-}
+} 
 
 .post-item__title:hover {
     opacity: 0.5;
