@@ -10,6 +10,40 @@ const createUnlikeRestaurantButtonTemplate = () => `
   </button>
 `;
 
+const createRestaurantItemTemplate = (resto, ENDPOINT) => `
+  <article id="resto-${resto.id}" class="post-item">
+      <div class="post-item__city">
+          <p>${resto.city}</p>
+      </div>
+      <img class="lazyload post-item__thumbnail"
+          data-src="${ENDPOINT.IMAGES.SMALL(resto.pictureId)}"
+          alt="Restoran ${resto.name}">
+      <div class="post-item__content">
+          <div class="post-item__rating">
+              <label for="number_rating">Rating: </label>
+              <div class="stars_outer">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <div class="stars_inner">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+              </div>
+              <span id="number_rating" class="number_rating">${resto.rating}</span>
+          </div>
+          <h1 class="post-item__title"><a href="#/detail/${resto.id}">${resto.name}</a></h1>
+          <p class="post-item__description">${resto.description}</p>
+              <a href="#/detail/${resto.id}" class="post-item__readmore">Read more</a>
+      </div>
+  </article>
+`;
+
 const createSkeletonRestaurantTemplate = (count) => {
   let template = '';
 
@@ -31,4 +65,5 @@ export {
   createLikeRestaurantButtonTemplate,
   createUnlikeRestaurantButtonTemplate,
   createSkeletonRestaurantTemplate,
+  createRestaurantItemTemplate,
 };

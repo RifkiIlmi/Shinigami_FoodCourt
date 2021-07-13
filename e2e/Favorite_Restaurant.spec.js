@@ -8,7 +8,7 @@ Before(({ I }) => {
 });
 
 const condition = 'Tidak ada Restaurant untuk ditampilkan';
-const moreDetailLink = { shadow: ['card-show:nth-child(1)', '.post-item', '.post-item__content', '.post-item__title', 'a'] };
+const moreDetailLink = '.post-item__title a';
 const formReview = { shadow: ['detail-show', 'add-review', '.card', '.card-input'] };
 const inputName = { shadow: ['detail-show', 'add-review', '.card', '.card-input', 'input#name'] };
 const inputReview = { shadow: ['detail-show', 'add-review', '.card', '.card-input', 'input#review'] };
@@ -42,7 +42,7 @@ Scenario('liking one movie', async ({ I }) => {
   I.click('#likeButton');
 
   I.amOnPage('/#/favorite');
-  I.seeElement({ shadow: ['card-show:nth-child(1)', '.post-item'] });
+  I.seeElement('.post-item');
 
   const likedRestoTitle = await I.grabTextFrom(moreDetailLink);
 
@@ -64,7 +64,7 @@ Scenario('unliking one restaurant', async ({ I }) => {
   I.click('#likeButton');
 
   I.amOnPage('/#/favorite');
-  I.seeElement({ shadow: ['card-show:nth-child(1)', '.post-item'] });
+  I.seeElement('.post-item');
 
   const likedRestoTitle = await I.grabTextFrom(moreDetailLink);
 

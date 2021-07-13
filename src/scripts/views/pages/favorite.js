@@ -1,5 +1,6 @@
 import FavoriteRestaurantIdb from '../../data/favoriterestaurant-idb';
-import '../components/Card';
+import ENDPPOINT from '../../global/api-endpoint';
+import { createRestaurantItemTemplate } from '../templates/template-creator';
 
 const Favorite = {
   async render() {
@@ -21,13 +22,14 @@ const Favorite = {
       restosContainer.innerHTML = `
         Tidak ada Restaurant untuk ditampilkan 
       `;
+    } else {
+      restos.forEach((resto) => {
+        restosContainer.innerHTML += createRestaurantItemTemplate(resto, ENDPPOINT);
+        const starPercentage = (resto.rating / 5) * 100;
+        const starPercentageRounded = `${Math.round(starPercentage / 10) * 10}%`;
+        document.querySelector(`#resto-${resto.id} .stars_inner`).style.width = starPercentageRounded;
+      });
     }
-
-    restos.forEach((resto) => {
-      const cardShowElement = document.createElement('card-show');
-      cardShowElement.data = resto;
-      restosContainer.appendChild(cardShowElement);
-    });
   },
 };
 

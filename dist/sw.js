@@ -10,6 +10,14 @@ var serviceWorkerOption = {
     "/icons/icon-256x256.png",
     "/icons/icon-384x384.png",
     "/icons/icon-512x512.png",
+    "/icons/maskable_icon.png",
+    "/icons/maskable_icon_x128.png",
+    "/icons/maskable_icon_x192.png",
+    "/icons/maskable_icon_x384.png",
+    "/icons/maskable_icon_x48.png",
+    "/icons/maskable_icon_x512.png",
+    "/icons/maskable_icon_x72.png",
+    "/icons/maskable_icon_x96.png",
     "/index.html"
   ]
 };

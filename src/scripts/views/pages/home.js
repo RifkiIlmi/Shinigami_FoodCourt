@@ -1,5 +1,6 @@
 import RestaurantSource from '../../data/restaurant-source';
-import '../components/Card';
+import ENDPPOINT from '../../global/api-endpoint';
+import { createRestaurantItemTemplate } from '../templates/template-creator';
 
 const Home = {
   async render() {
@@ -17,10 +18,13 @@ const Home = {
     const restos = await RestaurantSource.allResto();
     const restosContainer = document.getElementById('posts');
 
+    restosContainer.innerHTML = '';
+
     restos.restaurants.forEach((resto) => {
-      const cardShowElement = document.createElement('card-show');
-      cardShowElement.data = resto;
-      restosContainer.appendChild(cardShowElement);
+      restosContainer.innerHTML += createRestaurantItemTemplate(resto, ENDPPOINT);
+      const starPercentage = (resto.rating / 5) * 100;
+      const starPercentageRounded = `${Math.round(starPercentage / 10) * 10}%`;
+      document.querySelector(`#resto-${resto.id} .stars_inner`).style.width = starPercentageRounded;
     });
   },
 };
